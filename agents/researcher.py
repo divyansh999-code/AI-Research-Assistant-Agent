@@ -14,7 +14,7 @@ def research_with_summary(self, query: str, summary_type: str = "brief"):
         "full_research": research_result,
         "summary": summary
     }
-
+ 
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.tools import Tool
 from langchain_core.prompts import ChatPromptTemplate
