@@ -1,4 +1,4 @@
-from duckduckgo_search import DDGS
+from ddgs import DDGS
 
 def search_web(query: str, max_results: int = 5):
     """
@@ -29,7 +29,7 @@ def search_web(query: str, max_results: int = 5):
 
 # Test it
 if __name__ == "__main__":
-    query = "What is LangChain?"
+    query = "what is langchain?"
     results = search_web(query, max_results=3)
     
     print(f"\nSearch results for: {query}\n")
