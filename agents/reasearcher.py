@@ -1,3 +1,20 @@
+# Add at the top
+from summarizer import SummarizerAgent
+
+# Inside ResearcherAgent class, after the research method
+def research_with_summary(self, query: str, summary_type: str = "brief"):
+    """Research and return with summary"""
+    research_result = self.research(query)
+    
+    summarizer = SummarizerAgent()
+    summary = summarizer.summarize(research_result, summary_type)
+    
+    return {
+        "query": query,
+        "full_research": research_result,
+        "summary": summary
+    }
+
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.tools import Tool
 from langchain_core.prompts import ChatPromptTemplate
@@ -64,7 +81,7 @@ def research(question: str):
 
 # Test it
 if __name__ == "__main__":
-    question = "What are the latest developments in AI agents?"
+    question = "who is hero in movie saaho?"
     print(f"\n{'='*60}")
     print(f"RESEARCHING: {question}")
     print(f"{'='*60}\n")
