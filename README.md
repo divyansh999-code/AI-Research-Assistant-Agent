@@ -12,6 +12,7 @@ User asks a question → System researches → Summarizes → Fact-checks → Re
 - **Researcher Agent**: Searches web using DuckDuckGo, finds relevant sources
 - **Summarizer Agent**: Creates concise summaries from research
 - **Fact-Checker Agent**: Validates claims against original sources
+
 ## 🏛️ Detailed Architecture
 
 ### System Flow
