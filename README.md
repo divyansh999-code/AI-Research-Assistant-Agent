@@ -12,6 +12,51 @@ User asks a question → System researches → Summarizes → Fact-checks → Re
 - **Researcher Agent**: Searches web using DuckDuckGo, finds relevant sources
 - **Summarizer Agent**: Creates concise summaries from research
 - **Fact-Checker Agent**: Validates claims against original sources
+## 🏛️ Detailed Architecture
+
+### System Flow
+User Question
+↓
+Researcher Agent (DuckDuckGo search)
+↓
+Raw sources + URLs
+↓
+Summarizer Agent (LLM processing)
+↓
+Concise summary
+↓
+Fact-Checker Agent (Validation)
+↓
+Final verified report
+
+
+### Agent Responsibilities
+
+**Researcher Agent**
+- Input: User question (string)
+- Tool: DuckDuckGo search API
+- Output: List of {url, title, snippet} objects
+- Logic: Take question → search web → return top 5-10 results
+
+**Summarizer Agent**  
+- Input: Search results from Researcher
+- Tool: LLM (Gemini)
+- Output: 3-5 sentence summary
+- Logic: Read all sources → extract key points → create coherent summary
+
+**Fact-Checker Agent**
+- Input: Summary + original sources
+- Tool: LLM (Gemini)
+- Output: Validation report with confidence score
+- Logic: Compare summary claims → check against sources → flag unsupported statements
+
+### Tech Implementation
+- **LangChain**: Agent framework, tool calling, orchestration
+- **Gemini Pro**: LLM for reasoning and text generation
+- **DuckDuckGo API**: Free web search (no API key needed)
+- **FastAPI**: REST endpoint for external access
+- **Python asyncio**: Async agent execution for speed
+
 
 ## 🛠️ Tech Stack
 
