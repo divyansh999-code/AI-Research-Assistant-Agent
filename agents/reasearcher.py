@@ -81,7 +81,7 @@ def research(question: str):
 
 # Test it
 if __name__ == "__main__":
-    question = "who is hero in movie saaho?"
+    question = "Who is Batman?"
     print(f"\n{'='*60}")
     print(f"RESEARCHING: {question}")
     print(f"{'='*60}\n")
