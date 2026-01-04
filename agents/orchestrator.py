@@ -78,7 +78,7 @@ class OrchestratorAgent:
                     report["research"]["content"], 
                     summary_type
                 )
-                summaries[summary_type] = result
+                summaries[summary_type] = result 
             
             summary_time = time.time() - summary_start
             
