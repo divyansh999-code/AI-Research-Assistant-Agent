@@ -50,7 +50,7 @@ Final verified report
 - Output: Validation report with confidence score
 - Logic: Compare summary claims → check against sources → flag unsupported statements
 
-### Tech Implementation
+### Tech Implementation 
 - **LangChain**: Agent framework, tool calling, orchestration
 - **Gemini Pro**: LLM for reasoning and text generation
 - **DuckDuckGo API**: Free web search (no API key needed)
