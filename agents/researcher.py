@@ -1,5 +1,3 @@
-# Add at the top
-from summarizer import SummarizerAgent
 
 # Inside ResearcherAgent class, after the research method
 def research_with_summary(self, query: str, summary_type: str = "brief"):

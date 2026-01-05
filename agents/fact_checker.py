@@ -9,7 +9,7 @@ load_dotenv(override=True)
 class FactCheckerAgent:
     def __init__(self):
         self.llm = ChatGoogleGenerativeAI(
-            model="gemini-2.5-flash",
+            model="gemini-2.5tgv  -flash",
             google_api_key=os.getenv("GOOGLE_API_KEY"),
             temperature=0.1  # Very low for factual verification
         )
