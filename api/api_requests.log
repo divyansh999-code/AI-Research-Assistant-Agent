@@ -4,3 +4,73 @@
 2026-01-05 13:54:38,944 - primp - INFO - response: https://www.mojeek.com/search?q=Who+is+Batman%3F 200
 2026-01-05 13:54:39,105 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
 2026-01-05 13:54:46,097 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-01-05 14:11:49,106 - API - INFO - {"timestamp": "2026-01-05T14:11:49.106784", "endpoint": "/research", "user": "Development", "usage": "1/100", "query": "What is Python?"}
+2026-01-05 14:11:50,285 - primp - INFO - response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=What%20is%20Python%3F 200
+2026-01-05 14:11:50,797 - primp - INFO - response: https://grokipedia.com/api/typeahead?query=What+is+Python%3F&limit=1 200
+2026-01-05 14:11:51,011 - primp - INFO - response: https://www.google.com/search?q=What+is+Python%3F&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS 200
+2026-01-05 14:11:51,527 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-05 14:11:58,275 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-01-05 14:12:15,713 - API - INFO - {"timestamp": "2026-01-05T14:12:15.713235", "endpoint": "/research", "user": "Development", "usage": "2/100", "query": "What is Python?"}
+2026-01-05 14:12:31,526 - API - INFO - {"timestamp": "2026-01-05T14:12:31.526170", "endpoint": "/research", "user": "Development", "usage": "3/100", "query": "What is Python?"}
+2026-01-05 14:12:31,958 - API - INFO - {"timestamp": "2026-01-05T14:12:31.958589", "endpoint": "/research", "user": "Development", "usage": "4/100", "query": "What is Python?"}
+2026-01-05 14:12:32,119 - API - INFO - {"timestamp": "2026-01-05T14:12:32.119146", "endpoint": "/research", "user": "Development", "usage": "5/100", "query": "What is Python?"}
+2026-01-05 14:12:32,377 - API - INFO - {"timestamp": "2026-01-05T14:12:32.377560", "endpoint": "/research", "user": "Development", "usage": "6/100", "query": "What is Python?"}
+2026-01-05 14:12:32,524 - API - INFO - {"timestamp": "2026-01-05T14:12:32.524810", "endpoint": "/research", "user": "Development", "usage": "7/100", "query": "What is Python?"}
+2026-01-05 14:12:32,734 - API - INFO - {"timestamp": "2026-01-05T14:12:32.734215", "endpoint": "/research", "user": "Development", "usage": "8/100", "query": "What is Python?"}
+2026-01-05 14:12:33,193 - API - INFO - {"timestamp": "2026-01-05T14:12:33.193450", "endpoint": "/research", "user": "Development", "usage": "9/100", "query": "What is Python?"}
+2026-01-05 14:12:33,483 - API - INFO - {"timestamp": "2026-01-05T14:12:33.483893", "endpoint": "/research", "user": "Development", "usage": "10/100", "query": "What is Python?"}
+2026-01-05 14:12:33,814 - slowapi - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /research
+2026-01-05 14:12:34,187 - slowapi - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /research
+2026-01-05 14:12:34,392 - slowapi - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /research
+2026-01-05 14:12:34,652 - slowapi - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /research
+2026-01-05 14:12:34,905 - slowapi - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /research
+2026-01-05 14:12:35,098 - slowapi - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /research
+2026-01-05 14:12:35,333 - slowapi - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /research
+2026-01-05 14:12:35,535 - slowapi - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /research
+2026-01-05 14:12:35,905 - slowapi - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /research
+2026-01-05 14:12:36,120 - slowapi - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /research
+2026-01-05 14:12:36,350 - slowapi - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /research
+2026-01-05 14:12:36,570 - slowapi - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /research
+2026-01-05 14:12:36,932 - slowapi - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /research
+2026-01-05 14:12:37,164 - slowapi - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /research
+2026-01-05 14:12:37,411 - slowapi - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /research
+2026-01-05 14:12:43,873 - slowapi - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /research
+2026-01-05 14:12:44,282 - slowapi - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /research
+2026-01-05 14:12:44,572 - slowapi - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /research
+2026-01-05 14:12:46,101 - slowapi - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /research
+2026-01-05 14:12:46,574 - slowapi - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /research
+2026-01-05 14:12:46,779 - slowapi - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /research
+2026-01-05 14:12:46,998 - slowapi - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /research
+2026-01-05 14:12:47,220 - slowapi - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /research
+2026-01-05 14:12:47,419 - slowapi - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /research
+2026-01-05 14:12:47,652 - slowapi - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /research
+2026-01-05 14:12:47,805 - slowapi - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /research
+2026-01-05 14:12:48,200 - slowapi - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /research
+2026-01-05 14:12:48,366 - slowapi - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /research
+2026-01-05 14:12:48,827 - slowapi - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /research
+2026-01-05 14:12:48,974 - slowapi - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /research
+2026-01-05 14:12:49,143 - API - INFO - {"timestamp": "2026-01-05T14:12:49.143123", "endpoint": "/research", "user": "Development", "usage": "41/100", "query": "What is Python?"}
+2026-01-05 14:13:20,701 - API - INFO - {"timestamp": "2026-01-05T14:13:20.701142", "endpoint": "/research", "user": "Development", "usage": "42/100", "query": "What is Python?"}
+2026-01-05 14:14:18,778 - API - INFO - {"timestamp": "2026-01-05T14:14:18.778236", "endpoint": "/research", "user": "Development", "usage": "43/100", "query": "What is Python?"}
+2026-01-05 14:14:19,174 - API - INFO - {"timestamp": "2026-01-05T14:14:19.174669", "endpoint": "/research", "user": "Development", "usage": "44/100", "query": "What is Python?"}
+2026-01-05 14:14:19,512 - API - INFO - {"timestamp": "2026-01-05T14:14:19.512859", "endpoint": "/research", "user": "Development", "usage": "45/100", "query": "What is Python?"}
+2026-01-05 14:14:19,767 - API - INFO - {"timestamp": "2026-01-05T14:14:19.767004", "endpoint": "/research", "user": "Development", "usage": "46/100", "query": "What is Python?"}
+2026-01-05 14:14:19,993 - API - INFO - {"timestamp": "2026-01-05T14:14:19.993833", "endpoint": "/research", "user": "Development", "usage": "47/100", "query": "What is Python?"}
+2026-01-05 14:14:20,292 - API - INFO - {"timestamp": "2026-01-05T14:14:20.292939", "endpoint": "/research", "user": "Development", "usage": "48/100", "query": "What is Python?"}
+2026-01-05 14:14:20,455 - API - INFO - {"timestamp": "2026-01-05T14:14:20.455874", "endpoint": "/research", "user": "Development", "usage": "49/100", "query": "What is Python?"}
+2026-01-05 14:14:20,776 - API - INFO - {"timestamp": "2026-01-05T14:14:20.775895", "endpoint": "/research", "user": "Development", "usage": "50/100", "query": "What is Python?"}
+2026-01-05 14:14:20,927 - API - INFO - {"timestamp": "2026-01-05T14:14:20.927357", "endpoint": "/research", "user": "Development", "usage": "51/100", "query": "What is Python?"}
+2026-01-05 14:14:21,284 - API - INFO - {"timestamp": "2026-01-05T14:14:21.284398", "endpoint": "/research", "user": "Development", "usage": "52/100", "query": "What is Python?"}
+2026-01-05 14:14:21,550 - slowapi - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /research
+2026-01-05 14:14:21,768 - slowapi - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /research
+2026-01-05 14:14:22,054 - slowapi - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /research
+2026-01-05 14:14:22,312 - slowapi - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /research
+2026-01-05 14:14:22,594 - slowapi - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /research
+2026-01-05 14:14:22,886 - slowapi - WARNING - ratelimit 10 per 1 minute (127.0.0.1) exceeded at endpoint: /research
+2026-01-05 14:17:59,589 - API - INFO - {"timestamp": "2026-01-05T14:17:59.589127", "endpoint": "/research", "user": "Development", "usage": "59/100", "query": "What is artificial intelligence?"}
+2026-01-05 14:18:00,347 - primp - INFO - response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=What%20is%20artificial%20intelligence%3F 200
+2026-01-05 14:18:00,772 - primp - INFO - response: https://grokipedia.com/api/typeahead?query=What+is+artificial+intelligence%3F&limit=1 200
+2026-01-05 14:18:02,266 - primp - INFO - response: https://yandex.com/search/site/?text=What+is+artificial+intelligence%3F&web=1&searchid=1084902 200
+2026-01-05 14:18:02,370 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-05 14:18:08,249 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-01-05 14:18:13,047 - API - INFO - {"timestamp": "2026-01-05T14:18:13.047365", "endpoint": "/research", "user": "Development", "usage": "60/100", "query": "What is artificial intelligence?"}
