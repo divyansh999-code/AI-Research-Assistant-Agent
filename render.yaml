@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: ai-research-assistant
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: cd api && python main.py
+    envVars:
+      - key: API_KEY_1
+        value: dev_key_123
+      - key: API_KEY_2
+        value: demo_key_456
+      - key: GOOGLE_API_KEY
+        sync: false
+
