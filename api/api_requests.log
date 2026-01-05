@@ -1,0 +1,6 @@
+2026-01-05 13:54:35,446 - API - INFO - {"timestamp": "2026-01-05T13:54:35.446518", "endpoint": "/research", "user": "Development", "usage": "1/100", "query": "Who is Batman?"}
+2026-01-05 13:54:36,321 - primp - INFO - response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Who%20is%20Batman%3F 200
+2026-01-05 13:54:36,708 - primp - INFO - response: https://grokipedia.com/api/typeahead?query=Who+is+Batman%3F&limit=1 200
+2026-01-05 13:54:38,944 - primp - INFO - response: https://www.mojeek.com/search?q=Who+is+Batman%3F 200
+2026-01-05 13:54:39,105 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-05 13:54:46,097 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
