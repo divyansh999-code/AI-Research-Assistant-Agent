@@ -5,6 +5,8 @@ from pydantic import BaseModel
 from slowapi.errors import RateLimitExceeded
 import sys
 import os
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
 
 # Add parent directory to path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -57,7 +59,13 @@ class VerifyRequest(BaseModel):
     text: str
 
 # API Endpoints
+# Serve static files
+app.mount("/static", StaticFiles(directory="static"), name="static")
+
 @app.get("/")
+def root():
+    return FileResponse("static/index.html")
+
 def root():
     return {
         "message": "AI Research Assistant API v3.0",
@@ -195,5 +203,12 @@ if __name__ == "__main__":
     import os
 port = int(os.getenv("PORT", 8000))
 uvicorn.run(app, host="0.0.0.0", port=port)
+app = FastAPI(
+    docs_url="/docs" if os.getenv("ENVIRONMENT") == "dev" else None,
+    redoc_url="/redoc" if os.getenv("ENVIRONMENT") == "dev" else None
+)
+@app.get("/health")
+async def health_check():
+    return {"status": "healthy"}
 
 
