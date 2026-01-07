@@ -9,7 +9,7 @@ load_dotenv(override=True)
 class FactCheckerAgent:
     def __init__(self):
         self.llm = ChatGoogleGenerativeAI(
-            model="gemini-2.5tgv  -flash",
+            model="gemini-2.0-flash",
             google_api_key=os.getenv("GOOGLE_API_KEY"),
             temperature=0.1  # Very low for factual verification
         )
@@ -161,3 +161,4 @@ if __name__ == "__main__":
         print(f"Confidence: {claim_data['confidence']}%")
         print(f"\nDetails:\n{claim_data['verification_details']}")
         print("\n" + "-"*60 + "\n")
+
